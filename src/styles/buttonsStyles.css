@@ -1,0 +1,22 @@
+.customButton {
+    border: none;
+    border-radius: 10px;
+    color: #F2AA4C;
+    font-size: 15px;
+    padding: 10px 20px !important;
+    font-family: "Unica One";
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #242D35;
+}
+
+.customButton:active {
+    background: #525A64;
+}
+
+.imageButton {
+    vertical-align: middle;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

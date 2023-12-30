@@ -1,0 +1,77 @@
+.authPage {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.authContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 310px;
+}
+
+.verticalSeparator {
+    width: 2px;
+    background-color: #242D35;
+    height: 300px;
+}
+
+.authErrorMessage {
+    color: #F2AA4C;
+}
+
+.authContainer h1 {
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.authContainer p {
+    margin: 0px;
+    margin-top: 16px;
+}
+
+.authContainer input {
+    height: 25px;
+    border-radius: 10px;
+    padding: 0px 4px;
+    border: 2px solid;
+}
+
+.authContainer input:focus {
+    border: 2px solid #F2AA4C !important;
+    box-shadow: 0 0 3px #F2AA4C !important;
+    -moz-box-shadow: 0 0 3px #F2AA4C !important;
+    -webkit-box-shadow: 0 0 3px #F2AA4C !important;
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+@-webkit-keyframes autofill {
+    0%,100% {
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+.authErrorMessage {
+    color: #F2AA4C;
+}
+
+.authInput {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.redirectLink {
+    color: #F2AA4C;
+}

@@ -1,0 +1,21 @@
+{
+    "board": {
+        "board": [[ 2, null, 1 ], [ 2, 1, 2 ], [ 1, 2, 1 ]],
+        "created": "",
+        "first_player": { 
+            "id": 1,
+            "username": "t1" 
+        },
+        "id": 0,
+        "second_player": { 
+            "id": 2,
+            "username": "t2"
+        },
+        "status": "finished",
+        "winner": { 
+            "id": 2,
+            "username": "t2"
+        }
+    },
+    "winningLine": [2, 4, 6]
+}

@@ -1,0 +1,66 @@
+.gamesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gamesSettingsContainer {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gameStatusFilterContainer {
+    display: flex;
+    min-width: 250px;
+    justify-content: space-between;
+    font-family: "Unica One";
+}
+
+.gameStatusFilterContainer label {
+    align-self: center;
+}
+
+select {
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    font-family: "Unica One";
+    background-color: #242D35;
+    background-image: none;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    font-family: "Unica One";
+    display: flex;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #3A434C;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    color: #f39c12;
+}

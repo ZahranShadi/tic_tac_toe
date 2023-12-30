@@ -1,0 +1,138 @@
+.gamePageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.boardContainer {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+}
+
+.boardContainer .player:first-of-type {
+  text-align: right;
+  border-right: 2px solid #242D35;
+}
+
+.boardContainer .player:last-of-type {
+  border-left: 2px solid #242D35;
+}
+
+.boardContainer .player.active:first-of-type {
+  background: -webkit-linear-gradient(0,#101820, #6A727D);
+}
+
+.boardContainer .player.active:last-of-type {
+  background: -webkit-linear-gradient(0,#6A727D,#101820);
+}
+
+.player {
+  padding: 20px;
+  margin: 0 50px;
+  height: 296px;
+  min-width: 150px;
+}
+
+.gameStatusContainer {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #242D35;
+  width: 296px;
+  min-height: 180px;
+}
+
+.gameStatusText {
+  font-size: 36px;
+  text-align: center;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.gameButtonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 320px;
+}
+
+.board {
+  display: grid;
+  gap: 10px;
+}
+
+.boardRow {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  font-family: "Unica One";
+  font-weight: 600;
+  font-size: 50px;
+  color: #101820;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+@keyframes highlight {
+  50% {
+    background-color: #6A727D;
+  }
+  100% {
+    background-color: #6A727D;
+  }
+}
+
+.tile.highlighted {
+  animation: highlight 1s ease-out;
+}
+
+@keyframes highlightWinner {
+  50% {
+    background-color: #F2AA4C;
+  }
+  100% {
+    background-color: #F2AA4C;
+  }
+}
+
+.tile.winningMove {
+  animation: highlight 1s ease-out, highlightWinner 2s ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+.tile.highlightedWinner {
+  animation: highlightWinner 2s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.tile.winner {
+  background-color: #F2AA4C;
+}
+
+.tile:hover {
+  background-color: #6A727D;
+  border: none;
+}
+
+.tile:disabled {  
+  pointer-events: none;
+}

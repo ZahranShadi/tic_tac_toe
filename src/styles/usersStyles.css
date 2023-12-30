@@ -1,0 +1,33 @@
+.usersContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.crown {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.rankContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.rank {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/crown-custom.svg") no-repeat;
+    text-align: center;
+    line-height: 50px;
+    color: #101820;
+    font-weight: bold;
+}
+
+.filterGray {
+    filter: grayscale(90%);
+}

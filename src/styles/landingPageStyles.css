@@ -1,0 +1,28 @@
+.landingPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingPageContainer h1 {
+    font-size: 50px;
+}
+
+.landingPageButtonsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    margin: 50px;
+}
+
+.pageLogo {
+    scale: 0.8;
+}
+
+.horizontalSeparator {
+    height: 2px;
+    background-color: #242D35;
+    width: 300px;
+}
