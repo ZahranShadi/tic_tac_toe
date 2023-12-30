@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Game, GameMove } from "../../types/types";
-import "../styles/ticTacToeStyles.css";
+import "../../styles/ticTacToeStyles.css";
 
 const COLUMNS_NUM = 3;
 

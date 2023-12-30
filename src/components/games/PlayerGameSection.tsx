@@ -1,6 +1,6 @@
 import React from "react";
 import { Player } from "../../types/types";
-import "../styles/ticTacToeStyles.css";
+import "../../styles/ticTacToeStyles.css";
 
 type PlayerGameSectionProps = {
     player: Player | null;

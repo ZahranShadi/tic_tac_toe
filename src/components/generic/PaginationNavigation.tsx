@@ -1,9 +1,9 @@
 import React from "react";
 import ImageButton from "./ImageButton";
 import { RESULTS_PER_PAGE } from "../../utils/common";
-import backButton from "../assets/chevron-left.svg";
-import nextButton from "../assets/chevron-right.svg";
-import "../styles/paginationNavigationStyles.css";
+import backButton from "../../assets/chevron-left.svg";
+import nextButton from "../../assets/chevron-right.svg";
+import "../../styles/paginationNavigationStyles.css";
 
 type PaginationNavigationProps = {
     pageIndex: number;

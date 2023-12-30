@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/customPopupStyles.css";
-import "../styles/buttonsStyles.css";
+import "../../styles/customPopupStyles.css";
+import "../../styles/buttonsStyles.css";
 
 type CustomPopupProps = {
     text: string;

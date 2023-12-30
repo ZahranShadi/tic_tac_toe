@@ -10,8 +10,8 @@ import Loader from "../../components/generic/Loader";
 import { useAuthApi } from "../../hooks/useAuthApi";
 import { useAsyncOperation } from "../../hooks/useAsyncOperation";
 import { DashboardTab } from "../../types/types";
-import logoutImage from "../assets/logout.svg";
-import "../styles/dashboardStyles.css";
+import logoutImage from "../../assets/logout.svg";
+import "../../styles/dashboardStyles.css";
 
 const DashboardPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState(DashboardTab.GAMES);

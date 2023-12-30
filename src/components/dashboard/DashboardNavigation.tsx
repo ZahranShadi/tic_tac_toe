@@ -1,6 +1,6 @@
 import React from "react";
 import { DashboardTab } from "../../types/types";
-import "../styles/dashboardStyles.css";
+import "../../styles/dashboardStyles.css";
 
 const DashboardNavigation: React.FC<{
     activeTab: string;
